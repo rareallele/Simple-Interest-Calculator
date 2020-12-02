@@ -2,7 +2,7 @@
 <html>
     <head>
         <!--The title and links to style and script files-->
-        <title>Simple Interest Calculator</title>
+        <title>Web App - Simple Interest Calculator</title>
         <script src="script.js"></script> 
         <link rel="stylesheet" href="style.css">
     </head>
@@ -13,11 +13,11 @@
             Amount: $
             <input onchange="validate_principal()" type="number"  id="principal">  <br/>
 
-            Rate: 
+            Interest rate: 
             <input onchange="rate_span()" type="range" id="rate" min=1 max=20 step=0.25 value=10.25 class="slider">  <br/>
             <span id="ratespan">10.25 %</span> <br>
 
-            No. of Years: 
+            Number of years: 
             <select id="years" name="years">
                 <option value=1>1</option>
                 <option value=2>2</option>
@@ -33,7 +33,7 @@
                 
             <br/><br>
         <!--The Compute button computes the interest based on the user inputs-->        
-        <button onclick="compute()">Compute Interest</button> <br>
+        <button onclick="compute()">Compute Interest</button> <br><br>
         Interest: <br><span id="result"></span> <br>
         <footer>
             <p>© Everyone Can Get Rich</p>
